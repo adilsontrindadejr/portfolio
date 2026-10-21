@@ -94,6 +94,9 @@ img{display:block;max-width:100%;height:auto}
 .mosaic .wide img{position:absolute;inset:0}
 .mosaic.pair .wide{aspect-ratio:3/2}
 .tag{position:absolute;left:8px;top:8px;padding:4px 7px;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.reels{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:10px}
+.reels figure{aspect-ratio:9/16}
+@media (max-width:640px){.reels{grid-template-columns:1fr;max-width:360px}}
 .vids{grid-template-columns:minmax(0,3fr) minmax(0,1fr)}
 .vids figure{height:clamp(240px,34vw,440px)}
 @media (max-width:760px){.g-4,.mosaic{grid-template-columns:repeat(2,minmax(0,1fr))}.g-3{grid-template-columns:repeat(2,minmax(0,1fr))}.vids{grid-template-columns:1fr}.vids figure:first-child{height:auto;aspect-ratio:16/9}.vids figure:last-child{height:auto;aspect-ratio:9/16;max-width:360px}}
@@ -218,6 +221,11 @@ footer{padding-block:24px;font-family:var(--mono);font-size:11px;letter-spacing:
     <div class="gallery vids">
       <figure><video src="img/sa-video-palco.mp4" poster="img/sa-video-palco-poster.jpg" controls playsinline preload="none" aria-label="Vídeo do Samba do Adilson com cantoras convidadas"></video><span class="tag">Vídeo · participações</span></figure>
       <figure><video src="img/sa-video-pista.mp4" poster="img/sa-video-pista-poster.jpg" controls playsinline preload="none" aria-label="Vídeo da pista lotada no Samba do Adilson"></video><span class="tag">Vídeo · pista</span></figure>
+    </div>
+    <div class="gallery reels">
+      <figure><video src="img/sv1.mp4" poster="img/sv1-poster.jpg" controls playsinline preload="none" aria-label="Vídeo da edição de 08/10 do Samba do Adilson"></video><span class="tag">Edição 08/10</span></figure>
+      <figure><video src="img/sv2.mp4" poster="img/sv2-poster.jpg" controls playsinline preload="none" aria-label="Vídeo em preto e branco da roda de samba"></video><span class="tag">A roda</span></figure>
+      <figure><video src="img/sv3.mp4" poster="img/sv3-poster.jpg" controls playsinline preload="none" aria-label="Vídeo de Adilson cantando na roda com o público"></video><span class="tag">Adilson na roda</span></figure>
     </div>
   </section>
 
